@@ -6,7 +6,8 @@ Codemeter runtime inside .net5.0 linux container in non-privileged mode.
 
 ```powershell
 PS> git clone https://github.com/max-ieremenko/codemeter.git c:\codemeter
-PS> docker build -f .\.dockerfile -t codemeter-aspnet:5.0 c:\codemeter
+PS> cd c:\codemeter
+PS> docker build -f .\.dockerfile -t codemeter-aspnet:5.0 .
 ```
 
 ## Run a container
