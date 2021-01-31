@@ -2,7 +2,7 @@
 
 Codemeter runtime inside .net5.0 linux container in non-privileged mode.
 
-## Build and image
+## Build an image
 
 ```powershell
 PS> git clone https://github.com/max-ieremenko/codemeter.git c:\codemeter
