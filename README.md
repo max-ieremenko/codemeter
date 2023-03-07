@@ -1,19 +1,19 @@
 # Codemeter
 
-Codemeter runtime inside .net5.0 linux container in non-privileged mode.
+Codemeter runtime inside .net7.0 ubuntu container in non-privileged mode.
 
 ## Build an image
 
 ```powershell
 PS> git clone https://github.com/max-ieremenko/codemeter.git c:\codemeter
 PS> cd c:\codemeter
-PS> docker build -f .\.dockerfile -t codemeter-aspnet:5.0 .
+PS> docker build -f .\.dockerfile -t codemeter-aspnet:7.0 .
 ```
 
 ## Run a container
 
 ```powershell
-PS> docker run -d -p 22350:22350 -p 22351:22351 -p 22352:22352 codemeter-aspnet:5.0
+PS> docker run -d -p 22350:22350 -p 22351:22351 -p 22352:22352 codemeter-aspnet:7.0
 ```
 
 Open http://127.0.0.1:22352/dashboard.html in the browser:
@@ -23,6 +23,6 @@ Open http://127.0.0.1:22352/dashboard.html in the browser:
 ## File reference
 
 * .dockerfile
-* codemeter_7.20.4396.500_amd64.deb: CodeMeter Runtime for Linux, see [download page](https://www.wibu.com/support/user/user-software.html).
+* codemeter_7.60.5598.500_amd64.deb: CodeMeter Runtime for Linux, see [download page](https://www.wibu.com/support/user/user-software.html).
 * entrypoint.sh: docker container entry point
 * Server.ini: codemeter configuration file
